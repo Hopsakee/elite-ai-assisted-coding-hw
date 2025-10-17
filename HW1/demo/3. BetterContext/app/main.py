@@ -325,7 +325,7 @@ def get_mice_card_icon_element(card_id: int, icon_type: str):
         icon_attrs = {
             "src": f"/api/mice-card-icon/{card.id}/{icon_type}",
             "class_": f"absolute {position_class} right-2 rounded-md border border-gray-300 object-cover",
-            "alt": f"{icon_type.upper()} Icon",
+            "alt": f"{icon_type} icon",
             "style": "width: 100px; height: 100px;",
             "id": f"mice-icon-{icon_type}-{card.id}"
         }
@@ -548,7 +548,7 @@ def get_try_card_icon_element(card_id: int):
         icon_attrs = {
             "src": f"/api/try-card-icon/{card.id}",
             "class_": "absolute top-2 right-2 rounded-md border border-gray-300 object-cover",
-            "alt": "Icon",
+            "alt": "consequence icon",
             "style": "width: 120px; height: 120px;",
             "id": f"try-icon-{card.id}"
         }
